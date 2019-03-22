@@ -20,7 +20,6 @@ class ThirdActivity : AppCompatActivity() {
         setContentView(R.layout.activity_third)
 
         val anim = AnimationUtils.loadAnimation(applicationContext, R.anim.move)
-        imageViewGameOn.startAnimation(anim)
 
         var chance = "X"
         var board = arrayListOf<String>("", "", "", "", "", "", "", "", "")

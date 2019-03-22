@@ -11,15 +11,14 @@ import kotlinx.android.synthetic.main.activity_main.*
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
+
         super.onCreate(savedInstanceState)
         window.requestFeature(Window.FEATURE_NO_TITLE)
         window.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN)
         window.requestFeature(Window.FEATURE_CONTENT_TRANSITIONS)
         setContentView(R.layout.activity_main)
-        val animMove = loadAnimation(applicationContext, R.anim.move)
-        val animFade = loadAnimation(applicationContext, R.anim.fade)
-        val animSlide = loadAnimation(applicationContext, R.anim.slide)
-        val animZoom = loadAnimation(applicationContext, R.anim.zoom)
+
+
         val animZoom2 = loadAnimation(applicationContext, R.anim.zoom2)
         val animBlink = loadAnimation(applicationContext, R.anim.blink)
         //imgTicTacToe.startAnimation(animBlink)
