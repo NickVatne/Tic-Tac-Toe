@@ -186,5 +186,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@android:drawable/ic_lock_power_off"/>
+    <Chronometer android:layout_width="126dp" android:layout_height="42dp" android:id="@+id/timer"
+                 android:textSize="25dp" tools:layout_editor_absoluteY="23dp" tools:layout_editor_absoluteX="130dp"/>
 
 </android.support.constraint.ConstraintLayout>

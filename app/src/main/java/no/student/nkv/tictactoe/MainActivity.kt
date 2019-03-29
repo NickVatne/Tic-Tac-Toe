@@ -3,12 +3,15 @@ package no.student.nkv.tictactoe
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.v4.view.ViewPager
 import android.view.Window
 import android.view.WindowManager
 import android.view.animation.AnimationUtils.loadAnimation
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
+
+    private var mViewPager: ViewPager? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
@@ -25,6 +28,7 @@ class MainActivity : AppCompatActivity() {
         btnSingle.setOnClickListener{
             btnSingle.startAnimation(animZoom2)
             startActivity(Intent(this@MainActivity, SecondActivity::class.java))
+
         }
 
         btnMulti.setOnClickListener{
@@ -52,5 +56,14 @@ class MainActivity : AppCompatActivity() {
     override fun onBackPressed() {
         super.onBackPressed()
         moveTaskToBack(true)
+    }
+    fun setupViewPager(viewPager: ViewPager) {
+        val adapter = SectionsStatePagerAdapter(supportFragmentManager)
+        adapter.addFragment(SecondActivity(), "Fragment1")
+        //adapter.addFragment(ThirdActivity(), "Fragment2")
+        viewPager.adapter = adapter
+    }
+    fun setViewPager(fragmentNumber: Int) {
+        mViewPager!!.currentItem = fragmentNumber
     }
     }

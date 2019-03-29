@@ -10,7 +10,7 @@ class SectionsStatePagerAdapter(fm: FragmentManager) : FragmentStatePagerAdapter
     private val mFragmentList = ArrayList<Fragment>()
     private val mFragmentTitleList = ArrayList<String>()
 
-    fun addFragment(fragment: Fragment, title: String) {
+    fun addFragment(fragment: SecondActivity, title: String) {
         mFragmentList.add(fragment)
         mFragmentTitleList.add(title)
     }
@@ -22,4 +22,8 @@ class SectionsStatePagerAdapter(fm: FragmentManager) : FragmentStatePagerAdapter
     override fun getCount(): Int {
         return mFragmentList.size
     }
+}
+
+private fun <E> ArrayList<E>.add(element: SecondActivity) {
+    TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
 }

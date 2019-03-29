@@ -8,35 +8,22 @@
                                              tools:context="no.student.nkv.tictactoe.WonActivity"
 >
 
-    <ImageView
-            android:id="@+id/zephGames"
-            android:layout_width="243dp"
-            android:layout_height="137dp"
-            android:layout_marginBottom="57dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.503"
-            app:layout_constraintStart_toStartOf="parent"
-          />
-
     <TextView
             android:id="@+id/textViewWon"
             android:layout_width="304dp"
             android:layout_height="183dp"
-            android:layout_marginBottom="97dp"
             android:layout_marginEnd="40dp"
             android:layout_marginStart="40dp"
-            android:layout_marginTop="93dp"
-            android:fontFamily="cursive"
+            android:layout_marginTop="172dp"
+            android:fontFamily="sans-serif"
             android:text="YOU WON"
             android:textAlignment="center"
             android:textAllCaps="true"
             android:textColor="@android:color/holo_green_dark"
-            android:textSize="56sp"
+            android:textSize="50sp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/zephGames"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintHorizontal_bias="0.111"/>
 
 </android.support.constraint.ConstraintLayout>

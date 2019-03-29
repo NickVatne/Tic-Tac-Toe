@@ -2,10 +2,11 @@ package no.student.nkv.tictactoe
 
 import android.content.Intent
 import android.os.Bundle
+import android.support.v4.view.ViewPager
 import android.support.v7.app.AppCompatActivity
 import android.view.Window
 import android.view.WindowManager
- import kotlinx.android.synthetic.main.activity_third.*
+import kotlinx.android.synthetic.main.activity_third.*
 import java.util.*
 import kotlin.collections.ArrayList
 
